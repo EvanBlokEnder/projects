@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat Saber 3D</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.1/three.module.min.js",
+                "OrbitControls": "https://cdn.jsdelivr.net/npm/three-orbit-controls@1.0.1/index.min.js",
+                "tween": "https://cdnjs.cloudflare.com/ajax/libs/tween.js/21.0.0/tween.esm.min.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="game-container"></div>
+    <div id="overlay">
+        <div id="controller-status">Connect a controller...</div>
+        <button id="start-button" style="display:none;">Start Game</button>
+    </div>
+    <div id="game-info" style="display: none;">
+        <div id="score">Score: 0</div>
+        <div id="combo">Combo: 0</div>
+    </div>
+    <script type="module" src="main.js"></script>
+    <audio id="background-music" loop></audio>
+</body>
+</html>
